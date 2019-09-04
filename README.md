@@ -4,3 +4,6 @@
 ## Still work in progress
 
 > **discord**: *#TheVirus6442* 
+
+##### Preview:
+![ALT](https://i.ibb.co/ScZ1dG5/brave-je-Py9518mk.jpg)
