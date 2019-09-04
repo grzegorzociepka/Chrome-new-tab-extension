@@ -2,13 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src *;">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/style.css">
   <title>New Tab</title>
 </head>
 <body>
   <div class="container" id="app">
-    {{ message }}
+    <div class="landing">
+      <h1 class="landing__heading">Good <span class="daytime">xxx</span></h1>
+    </div>
+
+    <div class="bookmarks">
+      <h2 class="bookmarks__heading bookmarks__heading--h2">Your Bookmarks:</h2>
+
+      <ul class="bookmarks__list">
+        <li class="bookmarks__element">
+
+          <a href="https://mail.google.com" class="bookmarks__link" target="_blank">
+            <img src="https://mail.google.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://facebook.com" class="bookmarks__link" target="_blank">
+            <img src="https://facebook.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://github.com" class="bookmarks__link" target="_blank">
+            <img src="https://github.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://youtube.com" class="bookmarks__link" target="_blank">
+            <img src="https://youtube.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://translate.google.com" class="bookmarks__link" target="_blank">
+            <img src="https://translate.google.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://olx.pl" class="bookmarks__link" target="_blank">
+            <img src="https://olx.pl/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://steampowered.com" class="bookmarks__link" target="_blank">
+            <img src="https://steampowered.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://instagram.com" class="bookmarks__link" target="_blank">
+            <img src="https://instagram.com/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://speedtest.net" class="bookmarks__link" target="_blank">
+            <img src="https://speedtest.net/favicon.ico" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+        <li class="bookmarks__element">
+          <a href="https://vuejs.org" class="bookmarks__link" target="_blank">
+            <img src="https://vuejs.org/images/logo.png" alt="bookmarks_icon" class="bookmarks__icon">
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="timeAndDate">
+      <h1 class="timeAndDate__clock">00:00:00</h1>
+      <h1 class="timeAndDate__date">00/00/0000</h1>
+    </div>
+
+    <div class="addBookmark">
+
+    </div>
   </div>
 
   <script src="./scripts/app.js"></script>

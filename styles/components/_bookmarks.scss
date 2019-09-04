@@ -1,0 +1,41 @@
+.bookmarks {
+  margin-top: 50px;
+
+  &__heading {
+    margin: 10px 0;
+    color: white;
+    font-weight: 400;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__element {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+
+    &--add {
+      background: transparent;
+      border: 1px dashed white;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px -5px white;
+    }
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+  &__link {
+    padding: 15px;
+  }
+}

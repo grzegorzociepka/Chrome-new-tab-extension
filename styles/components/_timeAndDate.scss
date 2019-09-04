@@ -1,0 +1,18 @@
+.timeAndDate {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+
+  &__clock {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 400;
+    color: white;
+  }
+  &__date {
+    margin: 0;
+    color: #9f9f9f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

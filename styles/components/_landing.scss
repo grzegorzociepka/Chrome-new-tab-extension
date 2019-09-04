@@ -1,0 +1,14 @@
+.landing {
+  color: #dfdfdf;
+
+  &__heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 56px;
+
+    &--smaller {
+      font-size: 24px;
+      //transform: translateX(15px);
+    }
+  }
+}
