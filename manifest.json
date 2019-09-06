@@ -6,6 +6,13 @@
     "scripts": ["scripts/app.js"],
     "persistent": false
   },
+  "permissions": [
+    "bookmarks",
+    "chrome://favicon/*",
+    "chrome://favicon/",
+    "tabs",
+    "<all_urls>"
+  ],
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

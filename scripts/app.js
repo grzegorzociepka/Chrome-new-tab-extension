@@ -51,6 +51,36 @@ function setDayTime () {
   dayTimeElement.textContent = dayTime;
 }
 
+const GetBookmars = () => {
+  chrome.bookmarks.getRecent(7, (itemTree)=>{
+    
+    itemTree.forEach(function(item){
+      const list = document.getElementById("bookmarks_list");
+      let li = document.createElement("li");
+      li.className = 'bookmarks__element';
 
+      let anchor = document.createElement("a");
+      anchor.className = 'bookmarks__link';
+      anchor.href = item.url;
+      anchor.target = "_blank";
+
+      let img = document.createElement("img");
+      img.src = GetFavicon(item.url);
+      img.className = "bookmarks__icon";
+      img.alt = "bookmarks_icon";
+
+      anchor.appendChild(img);
+      li.appendChild(anchor);
+      list.appendChild(li);
+    });
+  });
+}
+const GetFavicon = (url) =>{
+    var splittedLink = url.split("/");
+    var link = splittedLink[0] +'/' + splittedLink[1] +'/'+ splittedLink[2]+ '/' + 'favicon.ico';
+    return link;
+}
+
+GetBookmars();
 setDayTime();
 dateAndClock.show();
